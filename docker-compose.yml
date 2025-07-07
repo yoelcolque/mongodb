@@ -1,0 +1,16 @@
+services:
+    mongodb:
+        image: mongo:7.0
+        container_name: mongodb_dev
+        ports:
+            - 27017:27017
+        environment:
+            MONGO_ROOT_USER: admin
+            MONGO_ROOT_PASSWORD: admin
+            MONGO_DATABASE: escuela
+        volumes:
+            - mongo_data:/data/db
+        restart: always
+    
+volumes:
+    mongo_data:

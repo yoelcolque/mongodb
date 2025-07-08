@@ -1,3 +1,4 @@
+//db.profesores.drop();
 //
 // EJERCICIO 1: CREAR UN SISTEMA DE GESTION ACADEMICA
 //
